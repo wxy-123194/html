@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏</title>
+    <style>
+        
+        *{
+            margin:0;
+            padding:0;
+        
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    .navbar{
+        width: 100%;
+        height: 50px;
+        background:rgb(26, 137, 241) ;
+        box-shadow:0 -2px 2px rgb(26, 137, 241);
+        margin-top: 0;
+        }
+    .navbar ul{
+        list-style:none;
+        text-align: center;
+        }
+    .navbar ul li{
+        float:left;
+        width:150px;
+        height: 50px;
+        background: rgb(26, 137, 241);
+        margin-right: 1px;
+        font-size: 14px;
+        }
+    .navbar ul li:hover{
+        color:rgb(190, 178, 178);
+        background: rgb(190, 178, 178);
+    }
+   
+        
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        display: block ;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+
+    .navbar ul li ul li{
+        display: none;
+        width: 150px;
+        height: 50px;
+        float: initial;
+        background: rgb(26, 137, 241);
+        font-size: 10px;
+        }
+        .navbar ul li:haver ul li{
+        display: block;
+     
+        border-top:1px solid rgb(26, 137, 241);
+        }
+    .navbar ul li ul li{
+        display: none;
+        width: 150px;
+        height: 0px;
+        float: initial;
+        background: rgb(26, 137, 241);
+        font-size: 10px;
+        transition: 0.3s;
+        }
+    .navbar ul li:hover ul li{
+        display: block;
+        height: 50px;
+     
+        border-top:1px solidrgb(26, 137, 241) ;
+        }
+    
+    
+    </style>
+</head>
+<body>
+
+
+    <div class ="navbar">
+        <ul>
+            <li>
+                <a href ="#"></a>
+            </li>
+            
+            <li><a href ="#">学校概况</a>
+                <ul>
+                    <li><a href ="#">西华简介</a>
+                    <li><a href ="#">学校章程</a>
+                    <li><a href ="#">历史沿革</a>
+                    <li><a href ="#">现任领导</a>
+                    <li><a href ="#">西华标识</a>
+                    <li><a href ="#">西华影像</a>
+                </ul>
+            </li>
+            <li><a href ="#">机构设置</a>
+
+                 <ul>
+                    <li><a href ="#">学院</a>
+                    <li><a href ="#">部门</a>
+                   
+                </ul>
+
+            </li>
+            <li><a href ="#">人才培养</a>
+                <ul>
+                    <li><a href ="#">师资队伍</a>
+                    <li><a href ="#">本科教育</a>
+                    <li><a href ="#">研究生教育</a>
+                    <li><a href ="#">留学生教育</a>
+                    <li><a href ="#">专科教育</a>
+                    <li><a href ="#">继续教育</a>
+                            
+
+                </ul>
+            </li>
+            <li><a href ="#">科学研究</a>
+                <ul>
+                    <li><a href ="#">科研信息</a>
+                    <li><a href ="#">科研成果</a>
+                    <li><a href ="#">学科科研平台</a>
+                    <li><a href ="#">研究院</a>
+                    <li><a href ="#">学术期刊</a>
+                </ul>
+            </li>
+            <li><a href ="#">招生就业</a>
+                <ul>
+                    <li><a href ="#">本专科招生</a>
+                    <li><a href ="#">研究生招生</a>
+                    <li><a href ="#">继续教育招生</a>
+                    <li><a href ="#">就业信息</a>
+                </ul>
+            </li>
+            <li><a href ="#">合作交流</a>
+                <ul>
+                    <li><a href ="#">国际交流与合作</a>
+                    <li><a href ="#">地方合作</a>
+                    <li><a href ="#">西华大学科技园</a>
+                    <li><a href ="#">国际教育学院</a>
+                </ul>
+            </li>
+            <li><a href ="#">公共服务</a>
+                <ul>
+                    <li><a href ="#">学校校历</a>
+                    <li><a href ="#">网络服务</a>
+                    <li><a href ="#">招标投标</a>
+                    <li><a href ="#">后勤服务</a>
+                    <li><a href ="#">办公电话</a>
+                </ul>
+            </li>
+            <li><a href ="#">人才招聘</a></li>
+            </li>
+           
+        </ul>
+    </div>
+    
+</body>
+</html>

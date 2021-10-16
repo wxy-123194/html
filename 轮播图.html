@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轮播图</title>
+    <style type="text/css">
+      * {
+        margin: 0ox;
+        padding: 0px;
+        transition: all 1s;
+      }
+      .href {
+        width: 1500px;
+        height: 780px;
+        overflow: hidden;
+        position: relative;
+
+      }
+      input,
+      a {
+        width: 80px;
+        height: 25px;
+        position: fixed;
+        bottom: 0px;
+        background-color: rgb(209, 200, 200);
+        opacity: 0.4;
+        border-radius: 8px;
+        z-index: 10;
+      }
+      
+      input {
+        opacity: 0;
+        z-index: 100;
+      }
+
+      #input1,
+      #input1 ~ a {
+        left: 5%;
+      }
+      #input2,
+      #input2 ~ a {
+        left: 28%;
+      }
+      #input3,
+      #input3 ~ a {
+        left: 53%;
+      }
+      #input4,
+      #input4 ~ a {
+        left: 78%;
+      }
+      .imgmas {
+        position: fixed;
+        z-index: -1;
+      }
+      img {
+        position: absolute;
+
+        width: 1500 px;
+        overflow: hidden;
+      }
+      img:nth-of-type(1) {
+        left: 0px;
+      }
+      img:nth-of-type(2) {
+        left: 1510px;
+      }
+      img:nth-of-type(3) {
+        left: 3020px;
+      }
+      img:nth-of-type(4) {
+        left: 4530px;
+      }
+      #input1 :checked ~ .imgmas {
+        transform: translateX(0px);
+      }
+      #input2:checked ~ .imgmas {
+        transform: translateX(-1510px);
+      }
+      #input3:checked ~ .imgmas {
+        transform: translateX(-3020px);
+      }
+      #input4:checked ~ .imgmas {
+        transform: translateX(-4530px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="href">
+      <input type="radio" name="radio-set" checked="checked" id="input1" />
+      <a href="#a"></a>
+
+      <input type="radio" name="radio-set" id="input2" />
+      <a href="#b"></a>
+
+      <input type="radio" name="radio-set" id="input3" />
+      <a href="#c"></a>
+
+      <input type="radio" name="radio-set" id="input4" />
+      <a href="#d"></a>
+      <div class="imgmas">
+        <!--1700* 1700-->
+        <img src="图片3.jpg" alt="" id="a" />
+        <img src="图片4_看图王.jpg" alt="" id="b" class="b" />
+        <img src="图片5.jpg" alt="" id="c" class="c" />
+        <img src="图片9.jpg" alt="" id="d" class="d" />
+      </div>
+    </div>
+  </body>
+</html>
